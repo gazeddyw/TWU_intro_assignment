@@ -18,6 +18,7 @@ public class Main {
 
         AsteriskDiamond ad = new AsteriskDiamond();
         ad.printIsoscelesTriangle(3);
+        ad.printDiamond(7);
         System.out.println();
     }
 }
