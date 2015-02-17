@@ -8,4 +8,8 @@ public class Asterisk {
     public static void printSingleAsterisk() {
         System.out.print("*");
     }
+
+    public static void printSpace() {
+        System.out.print(" ");
+    }
 }

@@ -13,7 +13,11 @@ public class Main {
         System.out.println();
 
         AsteriskTriangle at = new AsteriskTriangle();
-        at.printRightTriangle(3);
+        at.printRightTriangle(4);
+        System.out.println();
+
+        AsteriskDiamond ad = new AsteriskDiamond();
+        ad.printIsoscelesTriangle(2);
         System.out.println();
     }
 }
