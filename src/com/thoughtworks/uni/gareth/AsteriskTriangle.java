@@ -7,7 +7,7 @@ public class AsteriskTriangle {
 
     public void printRightTriangle(int numberOfLines) {
         for (int lineCount = 1; lineCount <= numberOfLines; lineCount++) {
-            for (int asteriskCount = 0; asteriskCount < lineCount; asteriskCount ++) {
+            for (int asteriskCount = 0; asteriskCount < lineCount; asteriskCount++) {
                 Asterisk.printSingleAsterisk();
             }
             System.out.println();
