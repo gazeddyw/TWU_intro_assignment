@@ -5,7 +5,12 @@ package com.thoughtworks.uni.gareth;
  */
 public class AsteriskTriangle {
 
-    public void printTriangle(int numberOfLines) {
-        
+    public void printRightTriangle(int numberOfLines) {
+        for (int lineCount = 1; lineCount <= numberOfLines; lineCount++) {
+            for (int asteriskCount = 0; asteriskCount < lineCount; asteriskCount ++) {
+                Asterisk.printSingleAsterisk();
+            }
+            System.out.println();
+        }
     }
 }

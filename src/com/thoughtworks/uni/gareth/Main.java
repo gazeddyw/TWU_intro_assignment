@@ -11,6 +11,6 @@ public class Main {
         al.printVerticalAsteriskLine(3);
 
         AsteriskTriangle at = new AsteriskTriangle();
-        at.printTriangle(3);
+        at.printRightTriangle(3);
     }
 }
