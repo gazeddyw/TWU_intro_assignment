@@ -9,5 +9,8 @@ public class Main {
         AsteriskLine al = new AsteriskLine();
         al.printHorizontalAsteriskLine(8);
         al.printVerticalAsteriskLine(3);
+
+        AsteriskTriangle at = new AsteriskTriangle();
+        at.printTriangle(3);
     }
 }

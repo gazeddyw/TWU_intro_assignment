@@ -5,4 +5,7 @@ package com.thoughtworks.uni.gareth;
  */
 public class AsteriskTriangle {
 
+    public void printTriangle(int numberOfLines) {
+        
+    }
 }
