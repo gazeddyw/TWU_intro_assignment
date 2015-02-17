@@ -21,7 +21,7 @@ public class Main {
         ad.printDiamond(4);
         System.out.println();
 
-        FizzBuzz.fizzBuzz();
+        NumberGames.fizzBuzz();
         System.out.println();
     }
 }
