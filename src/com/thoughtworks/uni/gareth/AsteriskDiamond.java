@@ -6,19 +6,20 @@ package com.thoughtworks.uni.gareth;
 public class AsteriskDiamond {
 
     public void printIsoscelesTriangle(int numberOfLines) {
-        int asterisksInLastLine = (numberOfLines * 2) - 1;
-        int numberOfColumns = asterisksInLastLine;
-        int columnIndex = 0;
+        int asteriskCount = 1;
 
         for (int lineNumber = 1; lineNumber <= numberOfLines; lineNumber++) {
-            while (columnIndex < numberOfLines) {
+            for (int columnIndex = lineNumber; columnIndex < numberOfLines; columnIndex++) {
                 Asterisk.printSpace();
             }
-            Asterisk.printSingleAsterisk();
+            for (int asteriskIndex = 1; asteriskIndex <= asteriskCount; asteriskIndex++) {
+                Asterisk.printSingleAsterisk();
+            }
+            System.out.println();
+            asteriskCount += 2;
         }
     }
 
-    private void printLine(int lineNumber, int numberOfLines, int numberOfColumns) {
-
+    public void printDiamond(int numberOfLines) {
     }
 }
