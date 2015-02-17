@@ -30,8 +30,13 @@ public class AsteriskDiamond {
                 for (int columnIndex = prePivot; columnIndex < numberOfLinesToPivot; columnIndex++) {
                     Asterisk.printSpace();
                 }
-                for (int asteriskIndex = 1; asteriskIndex <= asteriskCount; asteriskIndex++) {
-                    Asterisk.printSingleAsterisk();
+                if (lineNumber < numberOfLinesToPivot) {
+                    for (int asteriskIndex = 1; asteriskIndex <= asteriskCount; asteriskIndex++) {
+                        Asterisk.printSingleAsterisk();
+                    }
+                }
+                else {
+                    System.out.print("Gazza");
                 }
                 System.out.println();
                 asteriskCount += 2;
