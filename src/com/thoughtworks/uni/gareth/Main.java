@@ -1,5 +1,7 @@
 package com.thoughtworks.uni.gareth;
 
+import java.util.List;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -22,6 +24,12 @@ public class Main {
         System.out.println();
 
         NumberGames.fizzBuzz();
+        System.out.println();
+
+        NumberGames ng = new NumberGames();
+        for (Integer integer : ng.generate(30)) {
+            System.out.println(integer);
+        }
         System.out.println();
     }
 }

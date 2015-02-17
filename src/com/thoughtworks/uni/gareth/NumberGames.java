@@ -1,5 +1,6 @@
 package com.thoughtworks.uni.gareth;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -24,8 +25,15 @@ public class NumberGames {
         }
     }
 
-    public List<Integer> generate(int n) {
+    public List<Integer> generate(int number) {
+        List<Integer> factors = new ArrayList<Integer>();
 
-        return null;
+        for (int i = 2; i <= number; i++) {
+            while (number % i == 0) {
+                factors.add(i);
+                number /= i;
+            }
+        }
+        return factors;
     }
 }
